@@ -136,3 +136,29 @@ h1,h2,h3,h4{font-family:var(--head);line-height:1.15}
   .panel{animation:none}
   .project,.tab{transition:none}
 }
+
+/* ===== Revisi: logo software, galeri foto, lightbox, bullet proyek ===== */
+.tools h4{margin-bottom:.6rem}
+.logo-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(86px,1fr));gap:.7rem}
+.tool{display:grid;justify-items:center;gap:.4rem;text-align:center;padding:.7rem .3rem;border:1px solid var(--card-line);border-radius:12px;background:rgba(31,79,216,.18);transition:transform .2s,border-color .2s}
+.tool:hover{transform:translateY(-3px);border-color:var(--yellow)}
+.tool .logo{position:relative;width:44px;height:44px;border-radius:10px;background:#fff;display:grid;place-items:center;overflow:hidden}
+.tool .logo::before{content:attr(data-initial);font:800 .9rem var(--head);color:#0a1740}
+.tool .logo img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;padding:5px;background:#fff}
+.tool span{font-size:.78rem;line-height:1.25;color:var(--text)}
+
+.gallery{display:grid;grid-template-columns:repeat(2,1fr);gap:.6rem;margin-bottom:1.1rem}
+.gallery .shot{position:relative;aspect-ratio:1;overflow:hidden;border-radius:12px;border:1.5px dashed rgba(143,176,255,.5);background:rgba(255,255,255,.04);cursor:zoom-in;padding:0}
+.gallery .shot img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .3s}
+.gallery .shot:hover img{transform:scale(1.05)}
+.media.doc{cursor:zoom-in}
+
+.bullets{margin-top:.8rem;display:grid;gap:.4rem}
+.bullets li{position:relative;padding-left:1.1rem;color:var(--muted);font-size:.95rem}
+.bullets li::before{content:"";position:absolute;left:0;top:.6em;width:6px;height:6px;border-radius:50%;background:var(--yellow)}
+.featured .bullets li{color:var(--text)}
+.featured + .featured{margin-top:0}
+
+.lightbox{position:fixed;inset:0;z-index:50;display:none;place-items:center;background:rgba(3,10,36,.92);padding:1.5rem;cursor:zoom-out}
+.lightbox.open{display:grid}
+.lightbox img{max-width:100%;max-height:100%;border-radius:12px;box-shadow:0 20px 60px rgba(0,0,0,.6)}
