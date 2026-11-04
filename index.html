@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Veri Eko Rahmadi | Portofolio Teknik Elektro</title>
-  <meta name="description" content="Portofolio Veri Eko Rahmadi, mahasiswa Teknik Elektro UNY. Sistem tenaga listrik, PLTS, kontrol dan instrumentasi.">
-  <meta property="og:title" content="Veri Eko Rahmadi | Portofolio Teknik Elektro">
-  <meta property="og:description" content="Sistem tenaga listrik, PLTS, kontrol dan instrumentasi.">
+  <title>Veri Eko Rahmadi | Electrical Engineering Portfolio</title>
+  <meta name="description" content="Portfolio of Veri Eko Rahmadi, Applied Electrical Engineering student at Universitas Negeri Yogyakarta. Power systems, control and instrumentation, renewable energy.">
+  <meta property="og:title" content="Veri Eko Rahmadi | Electrical Engineering Portfolio">
+  <meta property="og:description" content="Power systems, control and instrumentation, renewable energy.">
   <meta property="og:type" content="website">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%23081a5c'/><text x='50' y='67' font-family='Arial' font-weight='800' font-size='50' text-anchor='middle' fill='%23FFE14D'>VE</text></svg>">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;800&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
@@ -16,169 +16,288 @@
 </head>
 <body>
 
+<!-- ============ HEADER + TABS ============ -->
 <header class="site-header">
   <div class="wrap bar">
-    <a class="brand" href="#top">Veri Eko Rahmadi</a>
-    <button class="menu-btn" aria-label="Buka menu" aria-expanded="false">Menu</button>
-    <nav id="nav">
-      <a href="#tentang">Tentang</a>
-      <a href="#pengalaman">Pengalaman</a>
-      <a href="#proyek">Proyek</a>
-      <a href="#keahlian">Keahlian</a>
-      <a href="#kontak">Kontak</a>
+    <a class="brand" href="#about">Veri Eko Rahmadi</a>
+    <nav class="tabs" role="tablist" aria-label="Portfolio sections">
+      <button class="tab active" role="tab" data-tab="about" aria-selected="true">About Me</button>
+      <button class="tab" role="tab" data-tab="experience" aria-selected="false">Professional Experience</button>
+      <button class="tab" role="tab" data-tab="projects" aria-selected="false">Selected Project</button>
+      <button class="tab" role="tab" data-tab="organizational" aria-selected="false">Organizational</button>
+      <button class="tab" role="tab" data-tab="training" aria-selected="false">Technical Training</button>
     </nav>
   </div>
 </header>
 
-<main id="top">
-  <!-- HERO -->
-  <section class="hero wrap">
-    <div class="hero-text">
-      <h1>Veri Eko Rahmadi</h1>
-      <p class="lead">Mahasiswa Sarjana Terapan Teknik Elektro dengan fokus pada sistem tenaga listrik, kontrol dan instrumentasi, serta energi terbarukan.</p>
-      <p class="actions">
-        <a class="btn primary" href="#proyek">Lihat proyek</a>
-        <a class="btn" href="#kontak">Hubungi saya</a>
-      </p>
+<main class="wrap">
+
+  <!-- ============ 1. ABOUT ME ============ -->
+  <section id="about" class="panel active" role="tabpanel">
+    <h1 class="page-title">About <span>Me</span></h1>
+
+    <div class="grid-2">
+      <!-- Kolom kiri -->
+      <div class="stack">
+        <article class="card intro">
+          <!-- Foto: simpan di assets/foto-veri.jpg -->
+          <div class="media avatar" data-label="Foto">
+            <img src="assets/foto-veri.jpg" alt="Foto Veri Eko Rahmadi" onerror="this.remove()">
+          </div>
+          <div>
+            <h2>Veri Eko Rahmadi</h2>
+            <p class="subtitle">Applied Electrical Engineering Student</p>
+            <p>An Applied Electrical Engineering student in the seventh semester with a strong interest in Power Systems, Control and Instrumentation, and Renewable Energy. Skilled in using engineering software such as ETAP, AutoCAD, MATLAB Simulink, and PVsyst for system analysis, design, and simulation. Experienced in projects involving PLC automation, MEP analysis, solar power system simulation, DC–DC converter design, and power system studies.</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3 class="card-title">Education</h3>
+          <div class="edu">
+            <div>
+              <strong>Applied Bachelor's Degree, Electrical Engineering</strong>
+              <p>Universitas Negeri Yogyakarta, Kulon Progo, DI Yogyakarta</p>
+              <ul class="chips"><li class="hl">GPA 3.43 / 4.00</li><li>Semester 7</li></ul>
+            </div>
+            <span class="pill">2023 – Present</span>
+          </div>
+        </article>
+      </div>
+
+      <!-- Kolom kanan -->
+      <div class="stack">
+        <article class="card">
+          <h3 class="card-title">Core Competencies</h3>
+          <ul class="chips big">
+            <li class="hl">Power Systems</li>
+            <li class="hl">Control &amp; Instrumentation</li>
+            <li class="hl">Renewable Energy</li>
+            <li>PLC Automation</li>
+            <li>Solar PV Simulation</li>
+            <li>Load Flow Analysis</li>
+            <li>MEP Analysis</li>
+            <li>DC–DC Converter Design</li>
+            <li>Techno-Economic Analysis</li>
+            <li>Electrical Panel Assembly</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h3 class="card-title">Hardware &amp; Lab Tools</h3>
+          <!-- Sesuaikan daftar ini dengan alat yang benar-benar kamu pakai -->
+          <div class="tools">
+            <div><h4>Software</h4><p>ETAP, PVsyst, AutoCAD, DIgSILENT PowerFactory, MATLAB Simulink, CX-Programmer, DIALux evo, Visual Studio Code</p></div>
+            <div><h4>Hardware</h4><p>PLC &amp; HMI, ESP32 / Arduino, sensors and data acquisition, electrical panel wiring and testing</p></div>
+          </div>
+        </article>
+
+        <article class="card contact-card">
+          <div>
+            <h3 class="card-title">Get in Touch</h3>
+            <p><a class="mail" href="mailto:Veriekorahmadi@gmail.com">Veriekorahmadi@gmail.com</a></p>
+            <p class="actions">
+              <!-- Ganti # dengan link akun kamu -->
+              <a class="btn" href="#" target="_blank" rel="noopener">LinkedIn</a>
+              <a class="btn" href="#" target="_blank" rel="noopener">GitHub</a>
+              <a class="btn primary" href="assets/CV_Veri_Eko_Rahmadi.pdf" download>Download CV</a>
+            </p>
+          </div>
+          <!-- QR code CV: simpan di assets/qr-cv.png -->
+          <div class="media qr" data-label="QR CV">
+            <img src="assets/qr-cv.png" alt="QR code untuk membuka CV" onerror="this.remove()">
+          </div>
+        </article>
+      </div>
     </div>
-    <!-- Plat nama: ubah isinya sesuai kebutuhan -->
-    <dl class="nameplate" aria-label="Ringkasan">
-      <div><dt>Program studi</dt><dd>D4 Teknik Elektro</dd></div>
-      <div><dt>Kampus</dt><dd>Universitas Negeri Yogyakarta</dd></div>
-      <div><dt>Semester</dt><dd>7</dd></div>
-      <div><dt>IPK</dt><dd>3,43 / 4,00</dd></div>
-      <div><dt>Domisili</dt><dd>Kulon Progo, DIY</dd></div>
-    </dl>
-    <svg class="wave" viewBox="0 0 1000 60" preserveAspectRatio="none" aria-hidden="true">
-      <path d="M0 30 C 62 -6, 125 -6, 187 30 S 312 66, 375 30 S 500 -6, 562 30 S 687 66, 750 30 S 875 -6, 937 30 S 985 50, 1000 30" />
-    </svg>
   </section>
 
-  <!-- TENTANG -->
-  <section id="tentang" class="wrap section two-col">
-    <h2>Tentang saya</h2>
-    <div class="prose">
-      <p>Saya mahasiswa Sarjana Terapan Teknik Elektro Universitas Negeri Yogyakarta yang terbiasa bekerja dengan perangkat lunak teknik untuk analisis, perancangan, dan simulasi sistem. Pengalaman saya mencakup otomasi PLC, analisis MEP, simulasi sistem tenaga surya, perancangan konverter DC-DC, dan studi sistem tenaga listrik.</p>
-      <p>Saya juga aktif di kepanitiaan dan organisasi kemahasiswaan, sehingga terbiasa bekerja dalam tim dan mengatur waktu di antara kuliah, magang, dan kegiatan lain.</p>
+  <!-- ============ 2. PROFESSIONAL EXPERIENCE ============ -->
+  <section id="experience" class="panel" role="tabpanel" hidden>
+    <h1 class="page-title">Internship <span>Experience</span></h1>
+
+    <!-- ===== Pengalaman 1 ===== -->
+    <div class="exp">
+      <div class="exp-head">
+        <div>
+          <h2>PT. Sumber Segara Primadaya</h2>
+          <p class="subtitle">Operator &amp; Maintenance Intern</p>
+        </div>
+        <span class="pill">June – August 2026</span>
+      </div>
+      <div class="grid-2 exp-grid">
+        <article class="card">
+          <!-- Foto kegiatan: assets/magang-ssp.jpg -->
+          <div class="media wide" data-label="Foto kegiatan">
+            <img src="assets/magang-ssp.jpg" alt="Kegiatan magang di PT. Sumber Segara Primadaya" onerror="this.remove()">
+          </div>
+          <p class="kv"><b>Key Responsibilities:</b> Designed a 2.1 MW on-grid ground-mounted solar PV system for S2P Tower, interconnected to a 6.3 kV medium-voltage busbar under a self-consumption / zero-export scheme. Ran PVsyst energy yield simulation, ETAP load flow analysis, and an economic feasibility study (LCOE, NPV, payback period). Assisted in preparing electrical maintenance schedules and coordinating schedules for electrical equipment.</p>
+          <p class="kv"><b>Value / Impact:</b> Delivered a techno-economic design with an 86.7% Performance Ratio and 18.96% Solar Fraction, supporting grid interconnection feasibility and reliable maintenance planning.</p>
+        </article>
+        <article class="card output">
+          <h3 class="card-title center">Certificate of Completion</h3>
+          <!-- Sertifikat: assets/sertifikat-ssp.jpg -->
+          <div class="media doc" data-label="Sertifikat">
+            <img src="assets/sertifikat-ssp.jpg" alt="Sertifikat magang PT. Sumber Segara Primadaya" onerror="this.remove()">
+          </div>
+        </article>
+      </div>
+    </div>
+
+    <!-- ===== Pengalaman 2 ===== -->
+    <div class="exp">
+      <div class="exp-head">
+        <div>
+          <h2>CV. Global Technindo</h2>
+          <p class="subtitle">Junior Technician Intern</p>
+        </div>
+        <span class="pill">April – May 2026</span>
+      </div>
+      <div class="grid-2 exp-grid">
+        <article class="card">
+          <div class="media wide" data-label="Foto kegiatan">
+            <img src="assets/magang-gt.jpg" alt="Kegiatan magang di CV. Global Technindo" onerror="this.remove()">
+          </div>
+          <p class="kv"><b>Key Responsibilities:</b> Assisted in planning electrical panel systems for RS JIH Yogyakarta. Took part in panel assembly and component wiring based on technical drawings, conducted testing and quality control before installation, and supported on-site installation and commissioning.</p>
+          <p class="kv"><b>Value / Impact:</b> Contributed to panel work completed according to safety and technical standards, from drawing to commissioning.</p>
+        </article>
+        <article class="card output">
+          <h3 class="card-title center">Certificate of Completion</h3>
+          <div class="media doc" data-label="Sertifikat">
+            <img src="assets/sertifikat-gt.jpg" alt="Sertifikat magang CV. Global Technindo" onerror="this.remove()">
+          </div>
+        </article>
+      </div>
     </div>
   </section>
 
-  <!-- PENGALAMAN -->
-  <section id="pengalaman" class="wrap section two-col">
-    <h2>Pengalaman kerja</h2>
-    <ol class="timeline">
-      <li>
-        <p class="when">Juni - September 2026</p>
-        <h3>PT. Sumber Segara Primadaya</h3>
-        <p class="role">Magang Operator & Pemeliharaan</p>
-        <ul>
-          <li>Merancang PLTS ground-mounted on-grid 2,1 MW untuk S2P Tower, terinterkoneksi ke busbar 6,3 kV dengan skema konsumsi sendiri/zero-export.</li>
-          <li>Menjalankan simulasi produksi energi (PVsyst) dan analisis aliran daya (ETAP), serta analisis kelayakan ekonomi: LCOE, NPV, dan payback period.</li>
-          <li>Membantu menyusun jadwal pemeliharaan kelistrikan dan mengoordinasikan jadwal peralatan listrik.</li>
-        </ul>
-      </li>
-      <li>
-        <p class="when">April - Mei 2026</p>
-        <h3>CV. Global Technindo</h3>
-        <p class="role">Magang Teknisi</p>
-        <ul>
-          <li>Membantu perencanaan sistem panel listrik untuk RS JIH Yogyakarta.</li>
-          <li>Merakit panel dan memasang kabel komponen berdasarkan gambar teknik.</li>
-          <li>Melakukan pengujian dan kontrol kualitas sebelum pemasangan.</li>
-          <li>Mendukung pemasangan dan commissioning di lokasi sesuai standar keselamatan dan teknis.</li>
-        </ul>
-      </li>
-    </ol>
-  </section>
+  <!-- ============ 3. SELECTED PROJECT ============ -->
+  <section id="projects" class="panel" role="tabpanel" hidden>
+    <h1 class="page-title">Selected <span>Projects</span></h1>
 
-  <!-- PROYEK -->
-  <section id="proyek" class="wrap section">
-    <h2>Proyek</h2>
+    <h2 class="section-label">Internship Projects</h2>
 
-    <article class="featured">
+    <article class="card featured">
       <div>
-        <h3>PLTS Ground-Mounted On-Grid 2,1 MW, S2P Tower</h3>
-        <p>Perancangan dan analisis tekno-ekonomi PLTS yang terhubung ke busbar tegangan menengah 6,3 kV dengan skema zero-export. Mencakup penentuan ukuran modul PV, inverter string, dan susunan array, simulasi produksi energi, load flow, serta kelayakan ekonomi.</p>
-        <ul class="tags"><li>PVsyst</li><li>ETAP</li><li>Load flow</li><li>LCOE / NPV</li></ul>
+        <p class="eyebrow">PT. Sumber Segara Primadaya</p>
+        <h3>2.1 MW On-Grid Ground-Mounted PV System, S2P Tower</h3>
+        <p>Design and techno-economic analysis of a solar PV plant interconnected to a 6.3 kV medium-voltage busbar under a zero-export scheme. Covers PV module, string inverter, and array sizing, energy yield simulation, load flow, and economic feasibility.</p>
+        <ul class="chips"><li class="hl">PVsyst</li><li class="hl">ETAP</li><li>Load flow</li><li>LCOE / NPV</li><li>Payback period</li></ul>
       </div>
       <dl class="stats">
-        <div><dt>Kapasitas</dt><dd>2,1 MW</dd></div>
-        <div><dt>Performance Ratio</dt><dd>86,7%</dd></div>
-        <div><dt>Solar Fraction</dt><dd>18,96%</dd></div>
+        <div><dt>Capacity</dt><dd>2.1 MW</dd></div>
+        <div><dt>Performance Ratio</dt><dd>86.7%</dd></div>
+        <div><dt>Solar Fraction</dt><dd>18.96%</dd></div>
       </dl>
     </article>
 
-    <!-- Tambah proyek baru: salin satu blok <article class="project"> di bawah -->
-    <div class="projects">
-      <article class="project">
-        <h3>Simulasi PLC & HMI Perlintasan Kereta Api Otomatis</h3>
-        <p>Simulasi kontrol dan antarmuka operator untuk sistem perlintasan kereta api otomatis.</p>
-        <ul class="tags"><li>PLC</li><li>HMI</li><li>CX-Programmer</li></ul>
+    <div class="cards">
+      <article class="card project">
+        <p class="eyebrow">CV. Global Technindo</p>
+        <h3>Electrical Panel System, RS JIH Yogyakarta</h3>
+        <p>Panel planning support, assembly and wiring from technical drawings, pre-installation testing, and on-site commissioning.</p>
+        <ul class="chips"><li>Panel assembly</li><li>Testing &amp; QC</li><li>Commissioning</li></ul>
       </article>
-      <article class="project">
-        <h3>Perancangan Sistem Pendingin Otomatis</h3>
-        <p>Perancangan sistem pendingin dengan kontrol otomatis.</p>
-        <ul class="tags"><li>Kontrol</li><li>Instrumentasi</li></ul>
+      <article class="card project">
+        <p class="eyebrow">PT. Sumber Segara Primadaya</p>
+        <h3>Electrical Maintenance Scheduling</h3>
+        <p>Organized planned maintenance activities and coordinated schedules for electrical equipment as part of daily operations.</p>
+        <ul class="chips"><li>Maintenance planning</li><li>Coordination</li></ul>
       </article>
-      <article class="project">
-        <h3>Perancangan Konverter DC-DC Tipe Buck</h3>
-        <p>Perancangan rangkaian konverter buck untuk menurunkan tegangan DC.</p>
-        <ul class="tags"><li>Elektronika daya</li></ul>
+    </div>
+
+    <h2 class="section-label">Academic Projects</h2>
+    <!-- Tambah proyek: salin satu blok <article class="card project"> -->
+    <div class="cards">
+      <article class="card project">
+        <p class="eyebrow">Control</p>
+        <h3>PLC &amp; HMI Simulation for Automatic Railway Crossing</h3>
+        <p>Control logic and operator interface simulation for an automatic railway crossing system.</p>
+        <ul class="chips"><li>PLC</li><li>HMI</li><li>CX-Programmer</li></ul>
       </article>
-      <article class="project">
-        <h3>Analisis MEP Gedung PDAM Wates</h3>
-        <p>Analisis sistem mekanikal, elektrikal, dan plumbing gedung PDAM Wates, Kulon Progo.</p>
-        <ul class="tags"><li>MEP</li><li>AutoCAD</li></ul>
+      <article class="card project">
+        <p class="eyebrow">Control</p>
+        <h3>Automatic Cooling System Design</h3>
+        <p>Design of a cooling system with automatic control.</p>
+        <ul class="chips"><li>Control</li><li>Instrumentation</li></ul>
       </article>
-      <article class="project">
-        <h3>Simulasi Tenaga Surya Bangunan Dua Lantai</h3>
-        <p>Simulasi sistem tenaga surya untuk bangunan dua lantai dengan beban 20 kV.</p>
-        <ul class="tags"><li>PLTS</li><li>Simulasi</li></ul>
+      <article class="card project">
+        <p class="eyebrow">Power Electronics</p>
+        <h3>Buck Type DC–DC Converter Design</h3>
+        <p>Design of a buck converter circuit to step down DC voltage.</p>
+        <ul class="chips"><li>Power electronics</li><li>MATLAB Simulink</li></ul>
       </article>
-      <article class="project">
-        <h3>Studi Transmisi dan Distribusi, Wonosobo</h3>
-        <p>Studi kasus analisis sistem transmisi dan distribusi wilayah Wonosobo.</p>
-        <ul class="tags"><li>Sistem tenaga</li><li>Studi kasus</li></ul>
+      <article class="card project">
+        <p class="eyebrow">Building Systems</p>
+        <h3>MEP Analysis of PDAM Wates Building</h3>
+        <p>Mechanical, electrical, and plumbing analysis of the PDAM Wates building, Kulon Progo.</p>
+        <ul class="chips"><li>MEP</li><li>AutoCAD</li></ul>
+      </article>
+      <article class="card project">
+        <p class="eyebrow">Renewable Energy</p>
+        <h3>Solar Power System Simulation, Two-Story Building</h3>
+        <p>Solar power system simulation for a two-story building with a 20 kV load.</p>
+        <ul class="chips"><li>Solar PV</li><li>Simulation</li></ul>
+      </article>
+      <article class="card project">
+        <p class="eyebrow">Power Systems</p>
+        <h3>Transmission &amp; Distribution Case Study, Wonosobo</h3>
+        <p>Case study analysis of the transmission and distribution system in the Wonosobo region.</p>
+        <ul class="chips"><li>Power systems</li><li>Case study</li></ul>
       </article>
     </div>
   </section>
 
-  <!-- KEAHLIAN -->
-  <section id="keahlian" class="wrap section two-col">
-    <h2>Keahlian</h2>
-    <dl class="skills">
-      <div><dt>Perangkat lunak teknik</dt><dd>AutoCAD, DIgSILENT PowerFactory, ETAP, PVsyst, CX-Programmer, DIALux evo</dd></div>
-      <div><dt>Perangkat lunak umum</dt><dd>Visual Studio Code, Microsoft Office, Google Workspace</dd></div>
-      <div><dt>Interpersonal</dt><dd>Kerja sama tim, kepemimpinan, pengambilan keputusan, manajemen waktu</dd></div>
-      <div><dt>Bahasa</dt><dd>Indonesia (lancar), Inggris (cukup)</dd></div>
-      <div><dt>Sertifikasi</dt><dd>Microsoft Office (Word, Excel, PowerPoint), LPK DELTA, 2023</dd></div>
-    </dl>
+  <!-- ============ 4. ORGANIZATIONAL ============ -->
+  <section id="organizational" class="panel" role="tabpanel" hidden>
+    <h1 class="page-title">Organizational <span>Experience</span></h1>
+    <div class="cards">
+      <article class="card org">
+        <span class="pill">2023 – 2024</span>
+        <h3>Muslim Student Association Baiturrahman</h3>
+        <p>Faculty of Vocational</p>
+        <ul class="chips"><li class="hl">Entrepreneurship Division</li></ul>
+      </article>
+      <article class="card org">
+        <span class="pill">2024</span>
+        <h3>Ramadhan on Campus Program</h3>
+        <p>Volunteer</p>
+        <ul class="chips"><li class="hl">Public Relations</li></ul>
+      </article>
+      <article class="card org">
+        <span class="pill">2024</span>
+        <h3>Eks-mild Faculty of Vocational</h3>
+        <p>Staff</p>
+        <ul class="chips"><li class="hl">Security Division</li></ul>
+      </article>
+      <article class="card org">
+        <span class="pill">2025</span>
+        <h3>Ormawa x SDP BEM KM FV</h3>
+        <p>Committee member</p>
+        <ul class="chips"><li class="hl">Logistics &amp; Equipment Division</li></ul>
+      </article>
+    </div>
   </section>
 
-  <!-- ORGANISASI -->
-  <section class="wrap section two-col">
-    <h2>Organisasi & kegiatan</h2>
-    <ul class="rows">
-      <li><span>Himpunan Mahasiswa Muslim Baiturrahman Fakultas Vokasi, Divisi Kewirausahaan</span><time>2023-2024</time></li>
-      <li><span>Program Ramadhan on Campus (Relawan), Hubungan Masyarakat</span><time>2024</time></li>
-      <li><span>Eks-mild Fakultas Vokasi, Staf Divisi Keamanan</span><time>2024</time></li>
-      <li><span>Ormawa x SDP BEM KM FV, Divisi Logistik dan Perlengkapan</span><time>2025</time></li>
-    </ul>
+  <!-- ============ 5. TECHNICAL TRAINING / CERTIFICATION ============ -->
+  <section id="training" class="panel" role="tabpanel" hidden>
+    <h1 class="page-title">Technical Training <span>&amp; Certification</span></h1>
+
+    <!-- Tambah sertifikat: salin satu blok <article class="card cert"> -->
+    <div class="cards">
+      <article class="card cert">
+        <div class="media doc" data-label="Sertifikat">
+          <img src="assets/sertifikat-msoffice.jpg" alt="Sertifikat Microsoft Office LPK DELTA" onerror="this.remove()">
+        </div>
+        <div>
+          <span class="pill">2023</span>
+          <h3>Microsoft Office Certification</h3>
+          <p>Word, Excel, PowerPoint</p>
+          <ul class="chips"><li class="hl">LPK DELTA</li></ul>
+        </div>
+      </article>
+    </div>
   </section>
 
-  <!-- KONTAK -->
-  <section id="kontak" class="wrap section contact">
-    <h2>Mari berdiskusi</h2>
-    <p>Terbuka untuk peluang magang, proyek, dan kolaborasi di bidang sistem tenaga listrik dan energi terbarukan.</p>
-    <p class="actions">
-      <a class="btn primary" href="mailto:Veriekorahmadi@gmail.com">Veriekorahmadi@gmail.com</a>
-      <!-- Ganti # dengan link akun kamu -->
-      <a class="btn" href="#" target="_blank" rel="noopener">LinkedIn</a>
-      <a class="btn" href="#" target="_blank" rel="noopener">GitHub</a>
-      <!-- Letakkan file CV di folder assets/ dengan nama CV_Veri_Eko_Rahmadi.pdf -->
-      <a class="btn" href="assets/CV_Veri_Eko_Rahmadi.pdf" download>Unduh CV</a>
-    </p>
-  </section>
 </main>
 
 <footer class="wrap footer">
