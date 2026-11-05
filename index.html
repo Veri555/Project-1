@@ -41,7 +41,7 @@
       <div class="stack">
         <article class="card intro">
           <div class="media avatar" data-label="Foto">
-            <img src="assets/foto-veri.png" alt="Foto Veri Eko Rahmadi" onerror="this.remove()">
+            <img src="assets/foto-veri.jpg" alt="Foto Veri Eko Rahmadi" onerror="this.remove()">
           </div>
           <div>
             <h2>Veri Eko Rahmadi</h2>
@@ -83,24 +83,23 @@
 
         <article class="card">
           <h3 class="card-title">Hardware &amp; Lab Tools</h3>
-          <div class="tools">
-            <div>
-              <h4>Software</h4>
-              <!-- Logo: simpan di assets/logos/NAMA.png (kotak putih, idealnya persegi).
-                   Kalau file belum ada, tampil inisial sebagai pengganti. -->
-              <div class="logo-grid">
-                <div class="tool"><div class="logo" data-initial="ET"><img src="assets/logos/etap.png" alt="" onerror="this.remove()"></div><span>ETAP</span></div>
-                <div class="tool"><div class="logo" data-initial="PV"><img src="assets/logos/pvsyst.png" alt="" onerror="this.remove()"></div><span>PVsyst</span></div>
-                <div class="tool"><div class="logo" data-initial="AC"><img src="assets/logos/autocad.png" alt="" onerror="this.remove()"></div><span>AutoCAD</span></div>
-                <div class="tool"><div class="logo" data-initial="DI"><img src="assets/logos/digsilent.png" alt="" onerror="this.remove()"></div><span>DIgSILENT PowerFactory</span></div>
-                <div class="tool"><div class="logo" data-initial="MS"><img src="assets/logos/matlab.png" alt="" onerror="this.remove()"></div><span>MATLAB Simulink</span></div>
-                <div class="tool"><div class="logo" data-initial="CX"><img src="assets/logos/cx-programmer.png" alt="" onerror="this.remove()"></div><span>CX-Programmer</span></div>
-                <div class="tool"><div class="logo" data-initial="DL"><img src="assets/logos/dialux.png" alt="" onerror="this.remove()"></div><span>DIALux evo</span></div>
-                <div class="tool"><div class="logo" data-initial="VS"><img src="assets/logos/vscode.png" alt="" onerror="this.remove()"></div><span>Visual Studio Code</span></div>
-              </div>
-            </div>
-            <div><h4>Hardware</h4><p>PLC &amp; HMI, ESP32 / Arduino, sensors and data acquisition, electrical panel wiring and testing</p></div>
-          </div>
+
+          <h4 class="mini-title">Software</h4>
+          <!-- Logo: file di assets/logos/. Kalau file belum ada, otomatis tampil kotak inisial -->
+          <ul class="sw-grid">
+            <li class="sw"><span class="logo"><b>ET</b><img src="assets/logos/etap.png" alt="" onerror="this.remove()"></span>ETAP</li>
+            <li class="sw"><span class="logo"><b>PV</b><img src="assets/logos/pvsyst.png" alt="" onerror="this.remove()"></span>PVsyst</li>
+            <li class="sw"><span class="logo"><b>AC</b><img src="assets/logos/autocad.svg" alt="" onerror="this.remove()"></span>AutoCAD</li>
+            <li class="sw"><span class="logo"><b>DG</b><img src="assets/logos/digsilent.png" alt="" onerror="this.remove()"></span>DIgSILENT PowerFactory</li>
+            <li class="sw"><span class="logo"><b>ML</b><img src="assets/logos/matlab.svg" alt="" onerror="this.remove()"></span>MATLAB Simulink</li>
+            <li class="sw"><span class="logo"><b>CX</b><img src="assets/logos/cx-programmer.png" alt="" onerror="this.remove()"></span>CX-Programmer</li>
+            <li class="sw"><span class="logo"><b>DL</b><img src="assets/logos/dialux.png" alt="" onerror="this.remove()"></span>DIALux evo</li>
+            <li class="sw"><span class="logo"><b>VS</b><img src="assets/logos/vscode.svg" alt="" onerror="this.remove()"></span>Visual Studio Code</li>
+          </ul>
+
+          <h4 class="mini-title">Hardware</h4>
+          <!-- Sesuaikan dengan alat yang benar-benar kamu pakai -->
+          <ul class="chips"><li>PLC &amp; HMI</li><li>ESP32 / Arduino</li><li>Sensors &amp; data acquisition</li><li>Electrical panel wiring &amp; testing</li></ul>
         </article>
 
         <article class="card contact-card">
@@ -127,22 +126,27 @@
   <section id="experience" class="panel" role="tabpanel" hidden>
     <h1 class="page-title">Internship <span>Experience</span></h1>
 
-    <!-- ===== Pengalaman 1 ===== -->
+    <!-- ===== Pengalaman 1: PT. Sumber Segara Primadaya ===== -->
     <div class="exp">
       <div class="exp-head">
         <div>
           <h2>PT. Sumber Segara Primadaya</h2>
           <p class="subtitle">Operator &amp; Maintenance Intern</p>
         </div>
-        <span class="pill">June – August 2026</span>
+        <span class="pill">June – September 2026</span>
       </div>
       <div class="grid-2 exp-grid">
         <article class="card">
-          <div class="gallery">
-            <button class="shot" type="button"><img src="assets/magang-ssp-1.jpg" alt="Kegiatan magang di PT. Sumber Segara Primadaya 1" onerror="this.remove()"></button>
-            <button class="shot" type="button"><img src="assets/magang-ssp-2.jpg" alt="Kegiatan magang di PT. Sumber Segara Primadaya 2" onerror="this.remove()"></button>
-            <button class="shot" type="button"><img src="assets/magang-ssp-3.jpg" alt="Kegiatan magang di PT. Sumber Segara Primadaya 3" onerror="this.remove()"></button>
-            <button class="shot" type="button"><img src="assets/magang-ssp-4.jpg" alt="Kegiatan magang di PT. Sumber Segara Primadaya 4" onerror="this.remove()"></button>
+          <div class="gallery" aria-label="Foto kegiatan di PT. Sumber Segara Primadaya">
+            <div class="slides">
+              <figure class="slide active" style="--img:url('assets/magang-ssp-1.jpg')"><img class="zoom" src="assets/magang-ssp-1.jpg" alt="Tim di PT. Sumber Segara Primadaya"></figure>
+              <figure class="slide" style="--img:url('assets/magang-ssp-2.jpg')"><img class="zoom" src="assets/magang-ssp-2.jpg" alt="Kegiatan di area pembangkit"></figure>
+              <figure class="slide" style="--img:url('assets/magang-ssp-3.jpg')"><img class="zoom" src="assets/magang-ssp-3.jpg" alt="Foto bersama di depan gedung PT. Sumber Segara Primadaya"></figure>
+              <figure class="slide" style="--img:url('assets/magang-ssp-4.jpg')"><img class="zoom" src="assets/magang-ssp-4.jpg" alt="Veri di area pembangkit"></figure>
+            </div>
+            <button class="g-btn g-prev" aria-label="Previous photo">&#8249;</button>
+            <button class="g-btn g-next" aria-label="Next photo">&#8250;</button>
+            <div class="dots"></div>
           </div>
           <p class="kv"><b>Key Responsibilities:</b> Designed a 2.1 MW on-grid ground-mounted solar PV system for S2P Tower, interconnected to a 6.3 kV medium-voltage busbar under a self-consumption / zero-export scheme. Ran PVsyst energy yield simulation, ETAP load flow analysis, and an economic feasibility study (LCOE, NPV, payback period). Assisted in preparing electrical maintenance schedules and coordinating schedules for electrical equipment.</p>
           <p class="kv"><b>Value / Impact:</b> Delivered a techno-economic design with an 86.7% Performance Ratio and 18.96% Solar Fraction, supporting grid interconnection feasibility and reliable maintenance planning.</p>
@@ -150,13 +154,14 @@
         <article class="card output">
           <h3 class="card-title center">Certificate of Completion</h3>
           <div class="media doc" data-label="Sertifikat">
-            <img src="assets/sertifikat-ssp.png" alt="Sertifikat magang PT. Sumber Segara Primadaya" onerror="this.remove()">
+            <img class="zoom" src="assets/sertifikat-ssp.jpg" alt="Surat keterangan kerja praktik PT. Sumber Segara Primadaya" onerror="this.remove()">
           </div>
+          <p class="hint">Click to enlarge</p>
         </article>
       </div>
     </div>
 
-    <!-- ===== Pengalaman 2 ===== -->
+    <!-- ===== Pengalaman 2: CV. Global Technindo ===== -->
     <div class="exp">
       <div class="exp-head">
         <div>
@@ -167,20 +172,26 @@
       </div>
       <div class="grid-2 exp-grid">
         <article class="card">
-          <div class="gallery">
-            <button class="shot" type="button"><img src="assets/magang-gt-1.jpg" alt="Kegiatan magang di CV. Global Technindo 1" onerror="this.remove()"></button>
-            <button class="shot" type="button"><img src="assets/magang-gt-2.jpg" alt="Kegiatan magang di CV. Global Technindo 2" onerror="this.remove()"></button>
-            <button class="shot" type="button"><img src="assets/magang-gt-3.jpg" alt="Kegiatan magang di CV. Global Technindo 3" onerror="this.remove()"></button>
-            <button class="shot" type="button"><img src="assets/magang-gt-4.jpg" alt="Kegiatan magang di CV. Global Technindo 4" onerror="this.remove()"></button>
+          <div class="gallery" aria-label="Foto kegiatan di CV. Global Technindo">
+            <div class="slides">
+              <figure class="slide active" style="--img:url('assets/magang-gt-1.jpg')"><img class="zoom" src="assets/magang-gt-1.jpg" alt="Pengecekan panel listrik"></figure>
+              <figure class="slide" style="--img:url('assets/magang-gt-2.jpg')"><img class="zoom" src="assets/magang-gt-2.jpg" alt="Persiapan instalasi kabel di lokasi"></figure>
+              <figure class="slide" style="--img:url('assets/magang-gt-3.jpg')"><img class="zoom" src="assets/magang-gt-3.jpg" alt="Tim di depan panel listrik"></figure>
+              <figure class="slide" style="--img:url('assets/magang-gt-4.jpg')"><img class="zoom" src="assets/magang-gt-4.jpg" alt="Perakitan panel di workshop"></figure>
+            </div>
+            <button class="g-btn g-prev" aria-label="Previous photo">&#8249;</button>
+            <button class="g-btn g-next" aria-label="Next photo">&#8250;</button>
+            <div class="dots"></div>
           </div>
           <p class="kv"><b>Key Responsibilities:</b> Assisted in planning electrical panel systems for RS JIH Yogyakarta. Took part in panel assembly and component wiring based on technical drawings, conducted testing and quality control before installation, and supported on-site installation and commissioning.</p>
           <p class="kv"><b>Value / Impact:</b> Contributed to panel work completed according to safety and technical standards, from drawing to commissioning.</p>
         </article>
         <article class="card output">
-          <h3 class="card-title center">Certificate of Completion</h3>
-          <div class="media doc" data-label="Sertifikat">
-            <img src="assets/sertifikat-gt.png" alt="Sertifikat magang CV. Global Technindo" onerror="this.remove()">
+          <h3 class="card-title center">Internship Acceptance Letter</h3>
+          <div class="media doc" data-label="Surat">
+            <img class="zoom" src="assets/sertifikat-gt.jpg" alt="Surat balasan magang CV. Global Technindo" onerror="this.remove()">
           </div>
+          <p class="hint">Click to enlarge</p>
         </article>
       </div>
     </div>
@@ -192,7 +203,7 @@
 
     <h2 class="section-label">Internship Projects</h2>
 
-    <!-- Featured 1: S2P Tower -->
+    <!-- Proyek magang 1 -->
     <article class="card featured">
       <div>
         <p class="eyebrow">PT. Sumber Segara Primadaya</p>
@@ -207,18 +218,23 @@
       </dl>
     </article>
 
-    <!-- Featured 2: Global Technindo -->
+    <!-- Proyek magang 2 -->
     <article class="card featured">
       <div>
         <p class="eyebrow">CV. Global Technindo</p>
-        <h3>ATS &amp; LVMDP Electrical Panel System, RS JIH Yogyakarta</h3>
-        <p>Panel planning support, assembly and wiring from technical drawings, pre-installation testing and quality control, and on-site installation and commissioning of electrical panels for RS JIH Yogyakarta.</p>
-        <ul class="chips"><li class="hl">ATS</li><li class="hl">LVMDP</li><li>Panel assembly</li><li>Testing &amp; QC</li><li>Commissioning</li></ul>
+        <h3>Electrical Panel System, RS JIH Yogyakarta</h3>
+        <p>Supported the full panel workflow for a hospital project: planning, assembly and component wiring from technical drawings, testing and quality control before installation, then on-site installation and commissioning, all in line with safety and technical standards.</p>
+        <ul class="chips"><li class="hl">Panel assembly</li><li class="hl">Testing &amp; QC</li><li>Technical drawings</li><li>Commissioning</li><li>Electrical safety</li></ul>
+        <div class="thumbs">
+          <img class="zoom" src="assets/magang-gt-1.jpg" alt="Panel listrik saat pengecekan">
+          <img class="zoom" src="assets/magang-gt-3.jpg" alt="Tim di depan panel listrik">
+          <img class="zoom" src="assets/magang-gt-4.jpg" alt="Perakitan panel di workshop">
+        </div>
       </div>
-      <dl class="stats">
-        <div><dt>Site</dt><dd>RS JIH</dd></div>
-        <div><dt>Panels</dt><dd>ATS + LVMDP</dd></div>
-        <div><dt>Scope</dt><dd>Drawing to commissioning</dd></div>
+      <dl class="stats text">
+        <div><dt>Client</dt><dd>RS JIH Yogyakarta</dd></div>
+        <div><dt>Period</dt><dd>April – May 2026</dd></div>
+        <div><dt>Scope</dt><dd>Planning to commissioning</dd></div>
       </dl>
     </article>
 
@@ -226,66 +242,70 @@
       <article class="card project">
         <p class="eyebrow">PT. Sumber Segara Primadaya</p>
         <h3>Electrical Maintenance Scheduling</h3>
-        <p>Organized planned maintenance activities and coordinated schedules for electrical equipment as part of daily operations.</p>
+        <ul class="bullets">
+          <li>Organized planned maintenance activities as part of daily operations.</li>
+          <li>Coordinated schedules for electrical equipment to support reliable and efficient operations.</li>
+        </ul>
         <ul class="chips"><li>Maintenance planning</li><li>Coordination</li></ul>
       </article>
     </div>
 
     <h2 class="section-label">Academic Projects</h2>
-    <!-- Tambah proyek: salin satu blok <article class="card project"> -->
+    <!-- Tambah foto hasil proyek: letakkan baris di bawah ini tepat setelah <article class="card project">
+         <div class="media shot" data-label="Foto proyek"><img class="zoom" src="assets/proyek-nama.jpg" alt="Hasil proyek" onerror="this.remove()"></div> -->
     <div class="cards">
       <article class="card project">
         <p class="eyebrow">Control</p>
         <h3>PLC &amp; HMI Simulation for Automatic Railway Crossing System</h3>
         <ul class="bullets">
-          <li>Designed and developed a railway crossing control system simulation using CX-Programmer (PLC) and CX-Designer (HMI)</li>
-          <li>Implemented an automatic gate opening–closing mechanism based on train detection using sensors and actuators</li>
-          <li>Developed real-time process visualization through HMI to improve safety and traffic efficiency</li>
+          <li>Designed and developed a railway crossing control system simulation using CX-Programmer (PLC) and CX-Designer (HMI).</li>
+          <li>Implemented an automatic gate opening–closing mechanism based on train detection using sensors and actuators.</li>
+          <li>Developed real-time process visualization through HMI to improve safety and traffic efficiency.</li>
         </ul>
-        <ul class="chips"><li>PLC</li><li>HMI</li><li>CX-Programmer</li><li>CX-Designer</li></ul>
+        <ul class="chips"><li>PLC</li><li>HMI</li><li>CX-Programmer</li></ul>
       </article>
       <article class="card project">
         <p class="eyebrow">Control</p>
         <h3>Automatic Cooling System Design</h3>
         <ul class="bullets">
-          <li>Designed and implemented a microcontroller-based automatic cooling system</li>
-          <li>Integrated temperature sensors, actuators, and control logic to maintain thermal stability with real-time monitoring</li>
+          <li>Designed and implemented a microcontroller-based automatic cooling system.</li>
+          <li>Integrated temperature sensors, actuators, and control logic to maintain thermal stability with real-time monitoring.</li>
         </ul>
-        <ul class="chips"><li>Microcontroller</li><li>Control</li><li>Instrumentation</li></ul>
+        <ul class="chips"><li>Microcontroller</li><li>Sensors</li><li>Control logic</li></ul>
       </article>
       <article class="card project">
         <p class="eyebrow">Power Electronics</p>
         <h3>Buck Type DC–DC Converter Design</h3>
         <ul class="bullets">
-          <li>Designed a Buck type DC–DC converter for efficient voltage regulation</li>
-          <li>Performed component calculations (inductor, capacitor, MOSFET), circuit simulation, and output voltage ripple analysis</li>
+          <li>Designed a Buck type DC–DC converter for efficient voltage regulation.</li>
+          <li>Performed component calculations (inductor, capacitor, MOSFET), circuit simulation, and output voltage ripple analysis.</li>
         </ul>
-        <ul class="chips"><li>Power electronics</li><li>MATLAB Simulink</li></ul>
+        <ul class="chips"><li>Power electronics</li><li>Circuit simulation</li></ul>
       </article>
       <article class="card project">
         <p class="eyebrow">Building Systems</p>
         <h3>MEP Analysis of PDAM Wates Building, Kulon Progo</h3>
         <ul class="bullets">
-          <li>Conducted Mechanical, Electrical, and Plumbing (MEP) system analysis for the PDAM Wates commercial building</li>
-          <li>Evaluated electrical power installation, clean water distribution system, and design compliance with technical standards using DIALux evo</li>
+          <li>Conducted Mechanical, Electrical, and Plumbing (MEP) system analysis for the PDAM Wates commercial building.</li>
+          <li>Evaluated electrical power installation, clean water distribution system, and design compliance with technical standards using DIALux evo.</li>
         </ul>
-        <ul class="chips"><li>MEP</li><li>AutoCAD</li><li>DIALux evo</li></ul>
+        <ul class="chips"><li>MEP</li><li>DIALux evo</li></ul>
       </article>
       <article class="card project">
         <p class="eyebrow">Renewable Energy</p>
-        <h3>Solar Power System Simulation for a Two-Story Building with a 20 kV Load</h3>
+        <h3>Solar Power System Simulation for a Two-Story Building with 20 kV Load</h3>
         <ul class="bullets">
-          <li>Performed simulation and calculation of solar photovoltaic system requirements for a two-story building with a 20 kV load</li>
-          <li>Analyzed solar irradiation, solar panel capacity, battery system, and estimated energy savings using Visual Studio Code</li>
+          <li>Performed simulation and calculation of solar photovoltaic system requirements for a two-story building with a 20 kV load.</li>
+          <li>Analyzed solar irradiation, solar panel capacity, battery sizing, and estimated energy savings using Visual Studio Code.</li>
         </ul>
-        <ul class="chips"><li>Solar PV</li><li>Simulation</li><li>Visual Studio Code</li></ul>
+        <ul class="chips"><li>Solar PV</li><li>Battery sizing</li><li>Visual Studio Code</li></ul>
       </article>
       <article class="card project">
         <p class="eyebrow">Power Systems</p>
         <h3>Transmission &amp; Distribution System Analysis, Wonosobo Region</h3>
         <ul class="bullets">
-          <li>Analyzed the electrical power transmission and distribution system in the Wonosobo region using DIgSILENT PowerFactory</li>
-          <li>Performed Load Flow, Short Circuit, and imbalance analysis, including evaluation of voltage drop, power losses, and network optimization recommendations</li>
+          <li>Analyzed the electrical power transmission and distribution system in the Wonosobo region using DIgSILENT PowerFactory.</li>
+          <li>Performed Load Flow, Short Circuit, and imbalance analysis, including evaluation of voltage drop, power losses, and network optimization recommendations.</li>
         </ul>
         <ul class="chips"><li>DIgSILENT PowerFactory</li><li>Load flow</li><li>Short circuit</li></ul>
       </article>
@@ -295,6 +315,8 @@
   <!-- ============ 4. ORGANIZATIONAL ============ -->
   <section id="organizational" class="panel" role="tabpanel" hidden>
     <h1 class="page-title">Organizational <span>Experience</span></h1>
+    <!-- Tambah foto kegiatan: letakkan baris di bawah ini tepat setelah <article class="card org">
+         <div class="media shot" data-label="Foto kegiatan"><img class="zoom" src="assets/org-nama.jpg" alt="Kegiatan organisasi" onerror="this.remove()"></div> -->
     <div class="cards">
       <article class="card org">
         <span class="pill">2023 – 2024</span>
@@ -331,18 +353,18 @@
     <div class="cards">
       <article class="card cert">
         <div class="media doc" data-label="Sertifikat">
-          <img src="assets/sertifikat-bnsp.png" alt="Sertifikat Kompetensi BNSP Teknisi Pemeliharaan Elektrikal" onerror="this.remove()">
+          <img class="zoom" src="assets/sertifikat-bnsp.jpg" alt="Sertifikat kompetensi BNSP Teknisi Pemeliharaan Elektrikal" onerror="this.remove()">
         </div>
         <div>
-          <span class="pill">2026</span>
+          <span class="pill">22 Sep 2026</span>
           <h3>Electrical Maintenance Technician, Complex Industrial Electrical</h3>
-          <p>Certificate of Competence, valid for 3 years</p>
-          <ul class="chips"><li class="hl">BNSP</li><li>LSP LMI</li></ul>
+          <p>Certificate of Competence, BNSP</p>
+          <ul class="chips"><li class="hl">LSP Logam dan Mesin Indonesia</li><li>Valid 3 years</li></ul>
         </div>
       </article>
       <article class="card cert">
         <div class="media doc" data-label="Sertifikat">
-          <img src="assets/sertifikat-msoffice.png" alt="Sertifikat Microsoft Office LPK DELTA" onerror="this.remove()">
+          <img class="zoom" src="assets/sertifikat-msoffice.jpg" alt="Sertifikat Microsoft Office LPK DELTA" onerror="this.remove()">
         </div>
         <div>
           <span class="pill">2023</span>
