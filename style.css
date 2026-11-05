@@ -249,3 +249,8 @@ h1,h2,h3,h4{font-family:var(--head);line-height:1.15}
 @media (max-width:860px){
   .cards.cols-2{grid-template-columns:1fr}
 }
+
+
+/* ===== Logo UNY di kartu Education ===== */
+.edu-side{display:flex;flex-direction:column;align-items:flex-end;gap:.75rem;flex:none}
+.uny-logo{width:72px;height:72px;object-fit:contain;border-radius:50%;background:#fff;padding:3px}
