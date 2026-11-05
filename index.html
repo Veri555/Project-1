@@ -13,7 +13,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;800&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=4">
+  <link rel="stylesheet" href="style.css?v=6">
 </head>
 <body>
 
@@ -26,6 +26,7 @@
       <button class="tab" role="tab" data-tab="experience" aria-selected="false">Professional Experience</button>
       <button class="tab" role="tab" data-tab="projects" aria-selected="false">Selected Project</button>
       <button class="tab" role="tab" data-tab="organizational" aria-selected="false">Organizational</button>
+      <button class="tab" role="tab" data-tab="achievements" aria-selected="false">Achievements</button>
       <button class="tab" role="tab" data-tab="training" aria-selected="false">Technical Training</button>
     </nav>
   </div>
@@ -75,10 +76,11 @@
             <li>PLC Automation</li>
             <li>Solar PV Simulation</li>
             <li>Load Flow Analysis</li>
+            <li>Protection &amp; Synchronizing</li>
             <li>MEP Analysis</li>
             <li>DC–DC Converter Design</li>
             <li>Techno-Economic Analysis</li>
-            <li>Electrical Panel Assembly</li>
+            <li>Electrical Panel Design &amp; Assembly</li>
           </ul>
         </article>
 
@@ -184,8 +186,8 @@
             <button class="g-btn g-next" aria-label="Next photo">&#8250;</button>
             <div class="dots"></div>
           </div>
-          <p class="kv"><b>Key Responsibilities:</b> Assisted in planning electrical panel systems for RS JIH Yogyakarta. Took part in panel assembly and component wiring based on technical drawings, conducted testing and quality control before installation, and supported on-site installation and commissioning.</p>
-          <p class="kv"><b>Value / Impact:</b> Contributed to panel work completed according to safety and technical standards, from drawing to commissioning.</p>
+          <p class="kv"><b>Key Responsibilities:</b> Worked on the panel system for RS JIH Yogyakarta: design of a 1600A Change Over Switch (COS) panel and an analog synchronizing and protection system for the generator lines, panel assembly and component wiring from technical drawings, testing and quality control before installation, and support for on-site installation and commissioning.</p>
+          <p class="kv"><b>Value / Impact:</b> Panel designs with mechanical and electrical interlocks that stop the PLN and generator sources from connecting to the busbar at the same time, preventing back-feed, and with protection relays on every generator unit. Work followed safety and technical standards from drawing to commissioning.</p>
         </article>
         <article class="card output">
           <h3 class="card-title center">Internship Acceptance Letter</h3>
@@ -211,6 +213,10 @@
         <h3>2.1 MW On-Grid Ground-Mounted PV System, S2P Tower</h3>
         <p>Design and techno-economic analysis of a solar PV plant interconnected to a 6.3 kV medium-voltage busbar under a zero-export scheme. Covers PV module, string inverter, and array sizing, energy yield simulation, load flow, and economic feasibility.</p>
         <ul class="chips"><li class="hl">PVsyst</li><li class="hl">ETAP</li><li>Load flow</li><li>LCOE / NPV</li><li>Payback period</li></ul>
+        <div class="thumbs two">
+          <img class="zoom" src="assets/s2p-plant.jpg" alt="PLTU Cilacap, PT Sumber Segara Primadaya">
+          <img class="zoom" src="assets/s2p-layout.jpg" alt="Lahan calon lokasi PLTS di area S2P Tower">
+        </div>
       </div>
       <dl class="stats">
         <div><dt>Capacity</dt><dd>2.1 MW</dd></div>
@@ -224,8 +230,8 @@
       <div>
         <p class="eyebrow">CV. Global Technindo</p>
         <h3>Electrical Panel System, RS JIH Yogyakarta</h3>
-        <p>Supported the full panel workflow for a hospital project: planning, assembly and component wiring from technical drawings, testing and quality control before installation, then on-site installation and commissioning, all in line with safety and technical standards.</p>
-        <ul class="chips"><li class="hl">Panel assembly</li><li class="hl">Testing &amp; QC</li><li>Technical drawings</li><li>Commissioning</li><li>Electrical safety</li></ul>
+        <p>Panel system for a hospital project, from design to site: a 1600A Change Over Switch (COS) panel with interlocks, an analog synchronizing and protection system for the generator lines, panel assembly and wiring from technical drawings, testing and quality control, then on-site installation and commissioning.</p>
+        <ul class="chips"><li class="hl">Panel design</li><li class="hl">Protection relays</li><li>Change Over Switch</li><li>Generator synchronizing</li><li>Testing &amp; QC</li><li>Commissioning</li></ul>
         <div class="thumbs">
           <img class="zoom" src="assets/magang-gt-1.jpg" alt="Panel listrik saat pengecekan">
           <img class="zoom" src="assets/magang-gt-3.jpg" alt="Tim di depan panel listrik">
@@ -235,9 +241,37 @@
       <dl class="stats text">
         <div><dt>Client</dt><dd>RS JIH Yogyakarta</dd></div>
         <div><dt>Period</dt><dd>April – May 2026</dd></div>
-        <div><dt>Scope</dt><dd>Planning to commissioning</dd></div>
+        <div><dt>Scope</dt><dd>Design to commissioning</dd></div>
       </dl>
     </article>
+
+    <h3 class="sub-label">RS JIH Yogyakarta: design highlights</h3>
+    <div class="cards cols-2 designs">
+      <article class="card design">
+        <img class="zoom" src="assets/gt-cos-panel.jpg" alt="Gambar desain panel genset dan panel COS RS JIH Yogyakarta">
+        <p class="eyebrow">Design 1</p>
+        <h3>Change Over Switch (COS) Panel 1600A</h3>
+        <ul class="bullets">
+          <li>Switches the power source between the generator set and the PLN / transformer supply.</li>
+          <li>Main COS 3P 1250A (Socomec 41AC3120) for manual or motorized operation.</li>
+          <li>Panel size H2000 × W800 × D800 mm.</li>
+          <li>Mechanical and electrical interlock keeps both sources from connecting to the distribution busbar together, preventing back-feed that can damage equipment and endanger people.</li>
+        </ul>
+        <ul class="chips"><li class="hl">Socomec</li><li>Interlock</li><li>Source changeover</li></ul>
+      </article>
+      <article class="card design">
+        <img class="zoom" src="assets/gt-sync-panel.jpg" alt="Gambar desain panel sinkron genset RS JIH Yogyakarta">
+        <p class="eyebrow">Design 2</p>
+        <h3>Analog Synchronizing &amp; Protection System</h3>
+        <ul class="bullets">
+          <li>Extra protection layer on every generator unit using SEG and Schneider relays: Reverse Power (RW-N), Under/Overvoltage (RM35TF30), and Over Current (RM17JC00MW).</li>
+          <li>Analog metering per generator line: double voltmeter 0–400 V, double Hertz meter 45–55 Hz, zero voltmeter 0–800 VAC, kW meter, and COS Phi meter.</li>
+          <li>Synchron Check Relay SYNCHROMAX PID (Circutor), plus speed and voltage adjusters for generator fine-tuning.</li>
+        </ul>
+        <ul class="chips"><li class="hl">Reverse power</li><li>Over/undervoltage</li><li>Overcurrent</li><li>Synchronizing</li></ul>
+      </article>
+    </div>
+    <p class="note">Design drawings are shown without the consultant title block.</p>
 
     <div class="cards">
       <article class="card project">
@@ -346,6 +380,123 @@
     </div>
   </section>
 
+
+  <!-- ============ ACHIEVEMENTS ============ -->
+  <section id="achievements" class="panel" role="tabpanel" hidden>
+    <h1 class="page-title">Achievements <span>&amp; Progress</span></h1>
+
+    <h2 class="section-label">Key Results: PV Feasibility Study, S2P Tower</h2>
+    <p class="lead">Techno-economic study of a 2.1 MW ground-mounted on-grid PV plant (2,284 kWp DC / 2,200 kWac), completed during my Guided Industrial Practice at PT. Sumber Segara Primadaya. Every feasibility criterion was met.</p>
+    <div class="kpis">
+      <div class="kpi"><strong class="v">86.70%</strong><span class="l">Performance Ratio</span><small>Criterion: above 75%</small></div>
+      <div class="kpi"><strong class="v">3,488.7 MWh</strong><span class="l">Annual energy</span><small>1,528 kWh/kWp per year</small></div>
+      <div class="kpi"><strong class="v">18.96%</strong><span class="l">Solar Fraction</span><small>of 18,396 MWh/year demand</small></div>
+      <div class="kpi"><strong class="v">Rp921/kWh</strong><span class="l">LCOE</span><small>below PLN tariff Rp1,233/kWh</small></div>
+      <div class="kpi"><strong class="v">Rp8.27 B</strong><span class="l">NPV</span><small>25 years, 12% discount rate</small></div>
+      <div class="kpi"><strong class="v">18.60%</strong><span class="l">IRR</span><small>above the 12% discount rate</small></div>
+      <div class="kpi"><strong class="v">8.8 years</strong><span class="l">Discounted payback</span><small>criterion: under 25 years</small></div>
+      <div class="kpi"><strong class="v">46.5%</strong><span class="l">ROI</span><small>on Rp17.79 B CAPEX</small></div>
+    </div>
+
+    <h2 class="section-label">Project Progress</h2>
+    <ol class="steps">
+      <li class="card step">
+        <span class="num">1</span>
+        <h3>System Design</h3>
+        <p>3,460 Longi 660 Wp modules, 10 Huawei string inverters, 6 sub-arrays, DC:AC ratio 1.04, connected to a 6.3 kV busbar under a self-consumption scheme.</p>
+      </li>
+      <li class="card step">
+        <span class="num">2</span>
+        <h3>Energy Simulation</h3>
+        <p>PVsyst V8.0.6 yield simulation. Largest loss: panel temperature (−6.7%). Distribution across months is fairly even.</p>
+      </li>
+      <li class="card step">
+        <span class="num">3</span>
+        <h3>Economic Analysis</h3>
+        <p>CAPEX Rp17.79 B and OPEX Rp850.6 M per year, evaluated with NPV, IRR, payback, LCOE and ROI over 25 years.</p>
+      </li>
+      <li class="card step done">
+        <span class="num">4</span>
+        <h3>Conclusion</h3>
+        <p>All 12 indicators meet their criteria, so the 2.1 MW plant is declared economically feasible.</p>
+      </li>
+    </ol>
+
+    <div class="grid-2 charts">
+      <article class="card">
+        <h3 class="card-title">Cumulative Discounted Profit</h3>
+<svg class="chart" viewBox="0 0 640 320" role="img" aria-labelledby="c1t c1d"><title id="c1t">Cumulative discounted profit</title><desc id="c1d">Starts at minus Rp17.79 billion in year 0, turns positive in year 9, and reaches plus Rp8.27 billion in year 25.</desc>
+<line class="gl" x1="52" x2="624" y1="280.0" y2="280.0"/><text class="ax" x="44" y="284.0" text-anchor="end">-20</text>
+<line class="gl" x1="52" x2="624" y1="238.0" y2="238.0"/><text class="ax" x="44" y="242.0" text-anchor="end">-15</text>
+<line class="gl" x1="52" x2="624" y1="196.0" y2="196.0"/><text class="ax" x="44" y="200.0" text-anchor="end">-10</text>
+<line class="gl" x1="52" x2="624" y1="154.0" y2="154.0"/><text class="ax" x="44" y="158.0" text-anchor="end">-5</text>
+<line class="gl zero" x1="52" x2="624" y1="112.0" y2="112.0"/><text class="ax" x="44" y="116.0" text-anchor="end">0</text>
+<line class="gl" x1="52" x2="624" y1="70.0" y2="70.0"/><text class="ax" x="44" y="74.0" text-anchor="end">5</text>
+<line class="gl" x1="52" x2="624" y1="28.0" y2="28.0"/><text class="ax" x="44" y="32.0" text-anchor="end">10</text>
+<text class="ax" x="52.0" y="300" text-anchor="middle">0</text>
+<text class="ax" x="166.4" y="300" text-anchor="middle">5</text>
+<text class="ax" x="280.8" y="300" text-anchor="middle">10</text>
+<text class="ax" x="395.2" y="300" text-anchor="middle">15</text>
+<text class="ax" x="509.6" y="300" text-anchor="middle">20</text>
+<text class="ax" x="624.0" y="300" text-anchor="middle">25</text>
+<text class="ax" x="338" y="316" text-anchor="middle">Project year</text>
+<text class="ax" x="12" y="18" text-anchor="start">Rp billion</text>
+<polyline class="line" points="52.0,261.4 74.9,235.6 97.8,212.5 120.6,192.1 143.5,174.1 166.4,157.9 189.3,143.7 212.2,131.1 235.0,119.8 257.9,109.8 280.8,100.9 303.7,93.0 326.6,86.0 349.4,79.8 372.3,74.4 395.2,69.4 418.1,65.1 441.0,61.3 463.8,57.8 486.7,54.8 509.6,52.1 532.5,49.7 555.4,47.6 578.2,45.6 601.1,44.0 624.0,42.5"/>
+<circle class="dot" cx="52.0" cy="261.4" r="5"/><text class="lab" x="60.0" y="251.4" text-anchor="start">Year 0: −17.79</text>
+<circle class="dot" cx="257.9" cy="109.8" r="5"/><text class="lab" x="257.9" y="135.8" text-anchor="middle">Year 9: turns positive</text>
+<circle class="dot" cx="624.0" cy="42.5" r="5"/><text class="lab" x="624.0" y="30.5" text-anchor="end">Year 25: +8.27</text>
+</svg>
+        <p class="cap">From −Rp17.79 B at year 0 to +Rp8.27 B at year 25.</p>
+      </article>
+      <article class="card">
+        <h3 class="card-title">Monthly Solar Energy to User</h3>
+<svg class="chart" viewBox="0 0 640 320" role="img" aria-labelledby="c2t c2d"><title id="c2t">Monthly solar energy to user</title><desc id="c2d">Monthly energy between 250 MWh in November and 316 MWh in April, total 3,488.7 MWh per year.</desc>
+<line class="gl zero" x1="44" x2="628" y1="284.0" y2="284.0"/><text class="ax" x="36" y="288.0" text-anchor="end">0</text>
+<line class="gl" x1="44" x2="628" y1="210.9" y2="210.9"/><text class="ax" x="36" y="214.9" text-anchor="end">100</text>
+<line class="gl" x1="44" x2="628" y1="137.7" y2="137.7"/><text class="ax" x="36" y="141.7" text-anchor="end">200</text>
+<line class="gl" x1="44" x2="628" y1="64.6" y2="64.6"/><text class="ax" x="36" y="68.6" text-anchor="end">300</text>
+<text class="ax" x="12" y="18" text-anchor="start">MWh</text>
+<rect class="bar" x="51.8" y="80.7" width="33.1" height="203.3" rx="4"/><text class="val" x="68.3" y="74.7" text-anchor="middle">278</text><text class="ax" x="68.3" y="302" text-anchor="middle">Jan</text>
+<rect class="bar" x="100.5" y="82.1" width="33.1" height="201.9" rx="4"/><text class="val" x="117.0" y="76.1" text-anchor="middle">276</text><text class="ax" x="117.0" y="302" text-anchor="middle">Feb</text>
+<rect class="bar" x="149.1" y="56.5" width="33.1" height="227.5" rx="4"/><text class="val" x="165.7" y="50.5" text-anchor="middle">311</text><text class="ax" x="165.7" y="302" text-anchor="middle">Mar</text>
+<rect class="bar hi" x="197.8" y="52.9" width="33.1" height="231.1" rx="4"/><text class="val" x="214.3" y="46.9" text-anchor="middle">316</text><text class="ax" x="214.3" y="302" text-anchor="middle">Apr</text>
+<rect class="bar" x="246.5" y="55.1" width="33.1" height="228.9" rx="4"/><text class="val" x="263.0" y="49.1" text-anchor="middle">313</text><text class="ax" x="263.0" y="302" text-anchor="middle">May</text>
+<rect class="bar" x="295.1" y="70.4" width="33.1" height="213.6" rx="4"/><text class="val" x="311.7" y="64.4" text-anchor="middle">292</text><text class="ax" x="311.7" y="302" text-anchor="middle">Jun</text>
+<rect class="bar" x="343.8" y="60.9" width="33.1" height="223.1" rx="4"/><text class="val" x="360.3" y="54.9" text-anchor="middle">305</text><text class="ax" x="360.3" y="302" text-anchor="middle">Jul</text>
+<rect class="bar" x="392.5" y="59.5" width="33.1" height="224.5" rx="4"/><text class="val" x="409.0" y="53.5" text-anchor="middle">307</text><text class="ax" x="409.0" y="302" text-anchor="middle">Aug</text>
+<rect class="bar" x="441.1" y="73.3" width="33.1" height="210.7" rx="4"/><text class="val" x="457.7" y="67.3" text-anchor="middle">288</text><text class="ax" x="457.7" y="302" text-anchor="middle">Sep</text>
+<rect class="bar" x="489.8" y="75.5" width="33.1" height="208.5" rx="4"/><text class="val" x="506.3" y="69.5" text-anchor="middle">285</text><text class="ax" x="506.3" y="302" text-anchor="middle">Oct</text>
+<rect class="bar lo" x="538.5" y="101.1" width="33.1" height="182.9" rx="4"/><text class="val" x="555.0" y="95.1" text-anchor="middle">250</text><text class="ax" x="555.0" y="302" text-anchor="middle">Nov</text>
+<rect class="bar" x="587.1" y="87.2" width="33.1" height="196.8" rx="4"/><text class="val" x="603.7" y="81.2" text-anchor="middle">269</text><text class="ax" x="603.7" y="302" text-anchor="middle">Dec</text>
+</svg>
+        <p class="cap">Highest in April (316 MWh), lowest in November (250 MWh).</p>
+      </article>
+    </div>
+
+    <h2 class="section-label">Project Photos</h2>
+    <!-- Tambah foto: salin satu blok <figure class="shot-card"> -->
+    <div class="photos">
+      <figure class="shot-card">
+        <img class="zoom" src="assets/s2p-plant.jpg" alt="PLTU Cilacap, PT Sumber Segara Primadaya">
+        <figcaption>PLTU Cilacap, PT. Sumber Segara Primadaya</figcaption>
+      </figure>
+      <figure class="shot-card">
+        <img class="zoom" src="assets/s2p-layout.jpg" alt="Lahan calon lokasi PLTS di area S2P Tower">
+        <figcaption>Candidate PV site (about 1 ha) beside the new PLTU office. Satellite view: Google Maps</figcaption>
+      </figure>
+    </div>
+    <p class="note">These figures are simulation-based estimates: no 3D shading model yet, synthetic weather data, fixed tariff and costs, and no sensitivity analysis. Field irradiance data and sensitivity analysis are planned next steps.</p>
+
+    <h2 class="section-label">Career Timeline</h2>
+    <ol class="timeline">
+      <li><span class="pill">2023 – Present</span><div class="card"><h3>Applied Bachelor's, Electrical Engineering</h3><p>Universitas Negeri Yogyakarta. Current GPA 3.43 / 4.00.</p></div></li>
+      <li><span class="pill">2023</span><div class="card"><h3>Microsoft Office Certification</h3><p>Word, Excel, PowerPoint, LPK DELTA.</p></div></li>
+      <li><span class="pill">Apr – May 2026</span><div class="card"><h3>Junior Technician Intern, CV. Global Technindo</h3><p>Designed a 1600A COS panel and a generator synchronizing and protection system, plus panel assembly, testing and commissioning for RS JIH Yogyakarta.</p></div></li>
+      <li><span class="pill">22 Jun – 22 Sep 2026</span><div class="card"><h3>Guided Industrial Practice, PT. Sumber Segara Primadaya</h3><p>Completed the 2.1 MW PV feasibility study and took part in daily maintenance and operations at PLTU Cilacap.</p></div></li>
+      <li class="win"><span class="pill gold">22 Sep 2026</span><div class="card"><h3>BNSP Certificate of Competence</h3><p>Electrical Maintenance Technician, Complex Industrial Electrical. Issued by LSP Logam dan Mesin Indonesia, valid 3 years.</p></div></li>
+    </ol>
+  </section>
+
   <!-- ============ 5. TECHNICAL TRAINING / CERTIFICATION ============ -->
   <section id="training" class="panel" role="tabpanel" hidden>
     <h1 class="page-title">Technical Training <span>&amp; Certification</span></h1>
@@ -383,6 +534,6 @@
   <p>&copy; <span id="year">2026</span> Veri Eko Rahmadi</p>
 </footer>
 
-<script src="script.js?v=4"></script>
+<script src="script.js?v=6"></script>
 </body>
 </html>
